@@ -32,7 +32,10 @@ var conversation = new Conversation({
   // After that, the SDK will fall back to the bluemix-provided VCAP_SERVICES environment property
   // username: '<username>',
   // password: '<password>',
-  // url: 'https://gateway.watsonplatform.net/conversation/api',
+
+  // MY account region in IMB Bluemix was: Germany, and I had to change the url accordingly( https://github.com/watson-developer-cloud/conversation-simple/issues/127#issuecomment-305296443 )
+  // Previous URL was for United States
+  url: 'https://gateway-fra.watsonplatform.net/conversation/api/',
   version_date: Conversation.VERSION_DATE_2017_04_21
 });
 
